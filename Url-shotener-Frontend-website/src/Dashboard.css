@@ -1,0 +1,67 @@
+body {}
+
+.dashboard-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+    margin-top: 30px;
+}
+
+.datas {
+    margin-top: 20px;
+}
+
+.datas p {
+    font-size: 20px;
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ed7632;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width:932px) {
+    .graph {
+        width: 95%;
+    }
+}

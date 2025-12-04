@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.fixed {
+    overflow: hidden;
+}
+.read-only{
+    cursor:not-allowed;
+}
+.scrolled {
+    background-color: #ffffff;
+    transition: 1s;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .3);
+}
+
+.navbar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 110px;
+    border-bottom: 2px solid #ebeaea;
+    height: 10vh;
+}
+
+.mobile-navbar {
+    height: 10vh;
+    border-bottom: 2px solid #ebeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.mobile-navbar i {
+    font-size: 30px;
+}
+
+.mobile-navbar-list i {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.mobile-navbar-list {
+    width: 100%;
+    height: 100vh;
+    background-color: #ed7632;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    left: -100%;
+    transition: left .6s;
+    z-index: 100;
+}
+
+.left {
+    left: 0;
+}
+
+.mobile-navbar-list ul li {
+    list-style: none;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.mobile-navbar-list a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #191919;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 70px;
+}
+
+.navbar ul li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.black {
+    color: #191919;
+}
+
+.white {
+    color: #fff;
+}
+
+.navbar ul li a {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.onfocus-design {
+    background-color: #ffdfcc;
+    color: #ed7632;
+    padding: 3px 10px;
+    border-radius: 8px;
+    transform: translateX(10px);
+}
+
+.login-signUp-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button {
+    padding: 5px 20px;
+    color: #ed7632;
+    border: 2px solid #ed7632;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.signup-button {
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #ed7632;
+    background-color: #ed7632;
+    border-radius: 10px;
+}
+
+.logo i {
+    color: #ed7632;
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.intro-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-message button {
+    width: 18rem;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #ed7632;
+    background-color: #ed7632;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.intro-message button i {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.homeImg {
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.about h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    width: 60%;
+}
+
+.about .row {
+    padding: 20px 0;
+}
+
+.card-container {
+    width: 300px;
+    margin-top: 30px;
+}
+
+.inner-card-container {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .25);
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+}
+
+.card-container h2 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.card-container p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-img {
+    width: 50px;
+}
+
+.contact-content .img {
+    width: 50%;
+}
+
+.contact-content .img img {
+    width: 70%;
+}
+
+.contact-content .img {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inner-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 25px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .2);
+    width: 70%;
+    gap: 15px;
+}
+
+.form input,
+textarea {
+    background-color: rgba(247, 246, 244, 255);
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 20px;
+    border: 2px solid rgba(247, 246, 244, 255);
+    border-radius: 10px;
+    outline: none;
+    transition: .4s;
+    font-weight: 600;
+}
+
+.form input:focus,
+textarea:focus {
+    border: 2px solid #ed7632;
+}
+
+.custom-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #ed7632;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+.custom-btn:hover {
+    opacity: 0.8;
+}
+.secondary-btn{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ed7632;
+    border: 2px solid #ed7632;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s;
+}
+.contact-container h3 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    padding: 30px 0;
+    letter-spacing: 5px;
+}
+
+.erro-msg {
+    font-size: 13px;
+    color: #ed7632;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .3);
+    background-color: #ffdfcc;
+    margin-top: 15px;
+}
+
+.footer-container h1 {
+    margin-top: 10px;
+}
+
+.bg-color {
+    background-color: rgba(247, 246, 244, 255);
+}
+
+.outer-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .1);
+    width: 350px;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #191919;
+}
+
+.text1 {
+    color: #696a6b;
+    font-weight: 600;
+    padding-bottom: 19px;
+    font-size: 14px;
+}
+
+.text2 {
+    color: #696a6b;
+    font-weight: 600;
+    padding-bottom: 13px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.text2 span {
+    padding-left: 3px;
+    color: #ed7632;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-container i {
+    position: absolute;
+    margin-top: 13.5px;
+    left: 15px;
+    font-size: 18px;
+    color: #696a6b;
+}
+
+.input-container input {
+    background-color: rgba(247, 246, 244, 255);
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 45px;
+    border: 2px solid rgba(247, 246, 244, 255);
+    border-radius: 10px;
+    outline: none;
+    transition: .4s;
+    font-weight: 600;
+}
+
+.input-container input:focus {
+    border: 2px solid #ed7632;
+}
+
+.custom-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #ed7632;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+.custom-btn:hover {
+    opacity: 0.8;
+}
+
+.erro-msg {
+    font-size: 13px;
+    color: #ed7632;
+}
+
+.forgot-password-text {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    font-weight: 400;
+}
+
+.line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.login {
+    font-size: 15px;
+}
+
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.not-found-page-img {
+    width: 400px;
+}
+
+.loading-container {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange{
+    color: #ed7632;
+}
+/* Dashboard */
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:947px) {
+    .navbar {
+        display: flex;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .intro-message h1 {
+        font-size: 48px;
+    }
+
+    .intro-message button {
+        width: 16rem;
+    }
+
+    .about h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .card-container h2 {
+        font-size: 80px;
+    }
+
+    .main-container {
+        margin-top: 20px;
+    }
+
+    .inner-card-container {
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, .25);
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 30px;
+        background-color: #f6f6f6;
+    }
+
+    .card-container h2 {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 70px;
+    }
+
+    .card-container p {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .contact-content .img img {
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+}
