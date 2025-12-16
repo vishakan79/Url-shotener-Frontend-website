@@ -13,7 +13,7 @@ Welcome to the URL Shortener Web Application! This is a full-stack MERN applicat
 ## Tech Stack 🛠️
 - **Frontend**: React.js
 - **Backend**: Spring boot
-- **Database**: MongoDB
+- **Database**: MySql
 
 ## Usage 📈
 1. **Register/Log In**: Use the authentication system to create or access your account.
