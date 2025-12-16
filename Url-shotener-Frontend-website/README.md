@@ -1,7 +1,7 @@
 # URL Shortener Web Application 🌐✂️
 
 ## Overview 📋
-Welcome to the URL Shortener Web Application! This is a full-stack MERN application that allows users to shorten long URLs, view URL statistics, and manage accounts. The app includes features such as user authentication, password recovery, and a dashboard for monitoring URL creation.
+Welcome to the URL Shortener Web Application! This is a full-stack Java application that allows users to shorten long URLs, view URL statistics, and manage accounts. The app includes features such as user authentication, password recovery, and a dashboard for monitoring URL creation.
 
 ## Features 🚀
 - **URL Shortening**: Convert long URLs into short, shareable links.
@@ -28,4 +28,4 @@ Welcome to the URL Shortener Web Application! This is a full-stack MERN applicat
 
 ## 🤝 Connect with Me
 
-💼 **LinkedIn:** [Balamurugan A](https://www.linkedin.com/in/balamurugan-a/)<br>
+
