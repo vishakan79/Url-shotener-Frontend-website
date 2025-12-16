@@ -12,7 +12,7 @@ Welcome to the URL Shortener Web Application! This is a full-stack MERN applicat
 
 ## Tech Stack 🛠️
 - **Frontend**: React.js
-- **Backend**: Node.js
+- **Backend**: Spring boot
 - **Database**: MongoDB
 
 ## Usage 📈
