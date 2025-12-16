@@ -26,6 +26,5 @@ Welcome to the URL Shortener Web Application! This is a full-stack Java applicat
 2. Receive an email with a password reset link.
 3. Follow the link to create a new password.
 
-## 🤝 Connect with Me
 
 
